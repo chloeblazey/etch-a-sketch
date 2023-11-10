@@ -1,3 +1,12 @@
+html {
+  background-color: bisque;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Playpen Sans', sans-serif;
+}
+
 .flex-grid {
   display: flex;
   max-width: 50%;
