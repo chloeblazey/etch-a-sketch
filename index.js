@@ -1,14 +1,15 @@
 /* Defines the width and height of our grid */
 const GRID_SIZE = 16; 
 
-/* Creates the 16x16 grid that will become the etch-a-sketch board */
-const gridContainer = document.querySelector("#grid-container");
 
 /* Adds the "etched" class to an element, changing its color*/
 function onMouseEnter(e) {
   e.target.className += " etched";
 }
 
+const gridContainer = document.querySelector("#grid-container");
+
+/* Creates the 16x16 grid that will become the etch-a-sketch board */
 for (let i = 0; i < GRID_SIZE; i++) {
   const col = document.createElement("div")
   col.setAttribute("id", "col-" + i);
@@ -25,3 +26,12 @@ for (let i = 0; i < GRID_SIZE; i++) {
   }
   gridContainer.appendChild(col);
 }
+
+/* Updates the number of cells in the grid */
+function updateGrid(e) {
+  alert(e.target.elements[0].value);
+}
+
+/* */
+const form = document.querySelector("#grid-size-form");
+form.addEventListener("submit", updateGrid);
