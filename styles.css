@@ -27,8 +27,6 @@ h1 {
 }
 
 .flex-cell {
-  min-height: 10px;
-  min-width: 10px;
   aspect-ratio: 1 / 1;
   border: 1px solid dodgerblue;
   background-color: darkblue;
@@ -38,7 +36,7 @@ h1 {
   background-color: paleturquoise;
 }
 
-.form-container {
+.form{
   font-family: monospace;
   padding-top: 50px;
 }
